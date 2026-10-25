@@ -1,8 +1,128 @@
-<html>
-  <head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Login</title>
-  </head>
-  <body>
-    <!-- Write your code here -->
-  </body>
+    <style>
+        body {
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .left {
+            width: 450px;
+            margin-top: 70px;
+            display: inline-block;
+        }
+
+        .left img {
+            width: 250px;
+        }
+
+        .left p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #ccc;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        form button {
+            background-color: #1877f2;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form a {
+            text-decoration: none;
+            color: #1877f2;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .signup {
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                flex-direction: column;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .left {
+                width: 100%;
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .left img {
+                width: 200px;
+            }
+
+            .left p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook logo">
+        <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+
+    <div class="right">
+        <form>
+            <input type="text" id="email" placeholder="Email address or phone number">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Log in</button>
+            <a href="#">Forgotten account?</a>
+        </form>
+
+        <button class="signup">Create new account</button>
+    </div>
+</body>
 </html>
